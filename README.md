@@ -28,16 +28,16 @@ The hyper-boundaries of the Scikit-learn model will be tuned utilizing Azure Hyp
 - Finally, the best model is saved using joblib <br>
 
 ### Benefits of parameter sampler
-- The parameter sampler is used to provide different choices of hyperparameters to choose from and try during hyperparameter tuning using hyperdrive. <br>
-- I have used Random Parameter Sampling in the parameter sampler so that it can be used to provide random sampling over a hyperparameter search space.
-- For our problem statement, the hyperparameters provided in the hyperparamete search space are C and max_iter.The different choices for the values of C and max_iter are provided so that the hyperdrive can try all the combinations of choices to do the hyperparameter tuning in order to get the best model with the maximum accuracy.
+- The parameter sampler is utilized to give various decisions of hyperparameters to look over and have a go at during hyperparameter tuning utilizing hyperdrive. <br>
+- I have utilized Random Parameter Sampling in the parameter sampler with the goal that it work very well and may be utilized to give irregular examining over a hyperparameter search space.
+- For our problem, the hyperparameters gave in the hyperparamete search space are C and max_iter.The various decisions for the estimations of C and max_iter are given so that the hyperdrive can attempt all the blends of decisions to do the hyperparameter tuning to get the best model with the greatest exactness.
 
 ### Benefits of Early Stopping policy
-- One can define an Early Stopping policy in HyperDriveConfig and it is useful in stopping the HyperDrive run if the accuracy of the model is not improving from the best accuracy by a certain defined amount after every given number of iterations <br>
-- In this model,we have defined a Bandit Policy for early stopping with the parameters slack_factor and evaluation_interval which are defined as :
-  - slack_factor :  The amount of slack allowed with respect to the best performing training run. This factor specifies the slack as a ratio. <br>
-  - evaluation_interval : The frequency for applying the policy. Each time the training script logs the primary metric counts as one interval.<br>
-- The main benefit of using early stopping is it saves a lot of computational resources
+- One can characterize an Early Stopping strategy in HyperDriveConfig and it is valuable in halting the HyperDrive run if the precision of the model isn't improving from the best exactness by a specific characterized sum after each given number of emphasess <br>
+- In this model, we have characterized a Bandit Policy for early stopping with the boundaries slack_factor and evaluation_interval which are characterized as :
+  - slack_factor :  The measure of slack permitted as for the best performing preparing run. This factor determines the leeway as a proportion. <br>
+  - evaluation_interval : The recurrence for applying the policy. Each time the preparation content logs the essential measurement considers one span.<br>
+- Early stop save a lot of compute resources by stopping the model on right time.
 
 ## AutoML
 - AutoML means Automated ML which means it can automate all the process involved in a Machine Learning process. For example, we can automate feature engineering, hyperparameter selection, model training, and tuning and can train and deploy 100 models in a day all with the help of AutoML.
