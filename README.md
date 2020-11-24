@@ -19,11 +19,12 @@ The hyper-boundaries of the Scikit-learn model will be tuned utilizing Azure Hyp
 
 ### Pipeline Architecture
 - In the Pipeline, first the dataset is recovered from the given url utilizing AzureDataFactory class in the train.py file. <br>
-- Then the data is cleaned using clean_data method in which some preprocessing steps were performed like converting categorical variable to binary encoding, one hot encoding,etc and then the dataset is split in ratio of 70:30 (train/test) for training and testing and sklearn's LogisticRegression Class is used to define Logistic Regression model. <br>
-- A SKLearn estimator which is used for training in Scikit-learn experiments is used here and it takes training scripts and performs the training on the compute. This estimator will later be passed to the HyperDrive Config script.
+- Then we create a compute instance for our model to train on it.
+- At that point the information is cleaned utilizing clean_data function in which some preprocessing steps were performed like changing straight out factor over to two fold encoding, one hot encoding, etc and afterward the dataset is part in proportion of 70:30 (train/test) for training and testing and sklearn's LogisticRegression Class is utilized to characterize Logistic Regression model. <br>
+- The train.py content contains all the means expected to prepare and test the model which are information recovery, information cleaning and pre-handling, information parting into train and test information, characterizing the scikit-learn model and preparing the model on train information and foreseeing it on the test information to get the precision and afterward sparing the model. <br>
+- A SKLearn estimator is created in which we pass it train.py script and the compute on which training of model should occur. 
 - Then a HyperDrive Config is created using the estimator, parameter sampler and a policy and the HyperDrive run is executed in the experiment.
 - The hyperparameters which are needed to be tuned are defined in the parameter sampler. The hyperparameters that can be tuned here are C and max_iter. C is the inverse regularization parameter and max_iter is the maximum number of iterations. <br>
-- The train.py script contains all the steps needed to train and test the model which are data retrieval, data cleaning and pre-processing, data splitting into train and test data, defining the scikit-learn model and training the model on train data and predicting it on the test data to get the accuracy and then saving the model. <br>
 - Finally ,the best run of the hyperdrive is noted and the best model in the best run is saved. <br>
 
 ### Benefits of parameter sampler
