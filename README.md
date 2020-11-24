@@ -52,7 +52,7 @@ The hyper-boundaries of the Scikit-learn model will be tuned utilizing Azure Hyp
     - experiment_timeout_minutes : The wait time after which autoML will stop. <br>
 - List of all the models used in the process:
 
-![alt_text](7.png)
+![alt_text](7.PNG)
 
 ## Pipeline comparison
 
@@ -64,15 +64,15 @@ The hyper-boundaries of the Scikit-learn model will be tuned utilizing Azure Hyp
 
 The best run/model of HyperDrive : 
 
-![alt_text](4.png)
+![alt_text](4.PNG)
 
 The best run/model in AutoML :
 
-![alt_text](6.png)
+![alt_text](6.PNG)
 
 Some of the top features in our dataset as learnt by the best AutoML model are :
 
-![alt_text](10.png)
+![alt_text](10.PNG)
 
 ## Future work
 
@@ -84,7 +84,7 @@ Some of the top features in our dataset as learnt by the best AutoML model are :
 
 - Here is the snapshot of deleting the compute cluster i took when the cluster was getting deleted
 
-![alt text](11.png)
+![alt text](11.PNG)
 
 
 ```python
