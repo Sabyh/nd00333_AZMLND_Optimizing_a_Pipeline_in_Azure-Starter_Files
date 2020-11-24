@@ -23,9 +23,9 @@ The hyper-boundaries of the Scikit-learn model will be tuned utilizing Azure Hyp
 - At that point the information is cleaned utilizing clean_data function in which some preprocessing steps were performed like changing straight out factor over to two fold encoding, one hot encoding, etc and afterward the dataset is part in proportion of 70:30 (train/test) for training and testing and sklearn's LogisticRegression Class is utilized to characterize Logistic Regression model. <br>
 - The train.py content contains all the means expected to prepare and test the model which are information recovery, information cleaning and pre-handling, information parting into train and test information, characterizing the scikit-learn model and preparing the model on train information and foreseeing it on the test information to get the precision and afterward sparing the model. <br>
 - A SKLearn estimator is created in which we pass it train.py script and the compute on which training of model should occur. 
-- Then a HyperDrive Config is created using the estimator, parameter sampler and a policy and the HyperDrive run is executed in the experiment.
-- The hyperparameters which are needed to be tuned are defined in the parameter sampler. The hyperparameters that can be tuned here are C and max_iter. C is the inverse regularization parameter and max_iter is the maximum number of iterations. <br>
-- Finally ,the best run of the hyperdrive is noted and the best model in the best run is saved. <br>
+- Then we create HyperDriveConfig by passing estimator, policy, hyperparameter sampling and primary metric name on which our model will be measured
+- The hyperparameters which are should have been tuned are characterized in the boundary sampler. The hyperparameters that can be tuned here are C and max_iter. C is the converse regularization boundary and max_iter is the greatest number of emphasess. <br>
+- Finally, the best model is saved using joblib <br>
 
 ### Benefits of parameter sampler
 - The parameter sampler is used to provide different choices of hyperparameters to choose from and try during hyperparameter tuning using hyperdrive. <br>
