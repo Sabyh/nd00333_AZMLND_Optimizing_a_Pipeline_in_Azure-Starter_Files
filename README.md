@@ -49,18 +49,18 @@ The hyper-boundaries of the Scikit-learn model will be tuned utilizing Azure Hyp
     - iterations : The number of iterations the autoML should run. <br>
     - primary_metric : the evaluation metric for the models for example we used accuracy<br>
     - n_cross_validations :  Cross validations needed to perform in each model <br>
-    - experiment_timeout_minutes : the time in minutes after which autoML will stop. <br>
-- Here is the list of all the models tested during AutoML run :
+    - experiment_timeout_minutes : The wait time after which autoML will stop. <br>
+- List of all the models used in the process:
 
 ![alt_text](AutoMLModels.png)
 
 ## Pipeline comparison
 
-- Overall,the difference in accuracy between the AutoML model and the Hyperdrive tuned custom model is not too much. AutoML accuracy was 0.9163 while the Hyperdrive accuracy was 0.9096
+- Overall,the contrast in exactness between the AutoML model and the Hyperdrive tuned custom model isn't excessively. AutoML exactness was 0.9163 while the Hyperdrive precision was 0.9096
 
-- With Respect to architecture AutoML was better than hyperdrive because it tried a lot of different models, which was quite impossible to do with Hyperdrive because for that we have to create pipeline for every model.
+- With Respect to engineering AutoML was in a way that is better than hyperdrive in light of the fact that it attempted many models, which was very difficult to do with Hyperdrive on the grounds that for that we need to make pipeline for each model.
 
-- There was not much difference in accuracy maybe because of the data set but AutoML really tried and computed some very complex models to get the best result and model out of the given dataset.
+- There was very little distinction in exactness perhaps on account of the informational collection yet AutoML truly attempted and figured some intricate models to get the best outcome and model out of the given dataset.
 
 The best run/model of HyperDrive : 
 
