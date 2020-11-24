@@ -76,8 +76,9 @@ Some of the top features in our dataset as learnt by the best AutoML model are :
 
 ## Future work
 
-- One thing which i would want in future as further improvement will be to able to give different custom cross validation strategy to the AutoML model. 
-- I have tried running AutoML with both clean and preprocessed dataset and also raw and uncleaned dataset to see whether it can do the cleaning and pre-processing by itself and it gave good results in both of them so i dont know how AutoML handled it itself and it saved my trouble of data cleaning. So i want to know whether it can do this data cleaning for all types of ML problems or not.
+- For the future I would like to use Bayesian Sampler instead of Random Sampler.
+- I would like to use different primary metric to test the performance of the model. I would like to use AUC instead of accuracy as primary metric in the future.
+- I have taken a stab at running AutoML with both clean and preprocessed dataset and furthermore raw and uncleaned dataset to see whether it can do the cleaning and pre-preparing without anyone else and it gave great outcomes in the two of them so I dont know how AutoML took care of it itself and it spared my difficulty of information cleaning. So I need to know whether it can do this information cleaning for a wide range of ML issues or not.
 
 ## Proof of cluster clean up
 
