@@ -40,15 +40,15 @@ The hyper-boundaries of the Scikit-learn model will be tuned utilizing Azure Hyp
 - Early stop save a lot of compute resources by stopping the model on right time.
 
 ## AutoML
-- AutoML means Automated ML which means it can automate all the process involved in a Machine Learning process. For example, we can automate feature engineering, hyperparameter selection, model training, and tuning and can train and deploy 100 models in a day all with the help of AutoML.
-- When i applied AutoML to our problem, it did a great task and i was surprised to see that AutoML tried so many different models in such a short time some of which i couldn't even think of trying or implementing. The models tried by AutoML were RandomForests,BoostedTrees,XGBoost,LightGBM,SGDClassifier,VotingEnsemble, etc. AutoML used many different input preprocessing normalization like Standard Scaling, Min Max Scaling, Sparse Normalizer, MaxAbsScaler, etc. It has also handled class imbalance very well by itself. <br>
-- To run AutoML, one needs to use AutoMLConfig class just like HyperdriveConfig class and need to define an automl_config object and setting various parameters in it which are needed to run the AutoML. Some of these parameters are : <br>
-    - task : what task needs to be performed , regression or classification <br>
-    - training_data : the data on which we need to train the autoML. <br>
-    - label_column_name : the column name in the training data which is the output label. <br>
-    - iterations : the number of iterations we want to run AutoML. <br>
-    - primary_metric : the evaluation metric for the models <br>
-    - n_cross_validations : n-fold cross validations needed to perform in each model <br>
+- AutoML implies Automated ML which implies it can automate all the cycle associated with a Machine Learning measure. For instance, we can automate feature engineering, hyperparameter determination, model preparing, and tuning and can prepare and send 100 models in a day all with the assistance of AutoML.
+- At the point when I applied AutoML to our concern, it did an extraordinary undertaking and I was astonished to see that AutoML attempted so a wide range of models in quite a brief timeframe some of which I was unable to try and consider attempting or executing. The models attempted via AutoML were RandomForests,BoostedTrees,XGBoost,LightGBM,SGDClassifier,VotingEnsemble, and so on AutoML utilized various information preprocessing standardization like Standard Scaling, Min Max Scaling, Sparse Normalizer, MaxAbsScaler, and so on It has likewise dealt with class irregularity very well without anyone else. <br>
+- To run AutoML, one necessities to utilize AutoMLConfig class simply like HyperdriveConfig class and need to characterize an automl_config item and setting different boundaries in it which are expected to run the AutoML. A portion of these boundaries are: <br>
+    - task : Type of task needed to perform (regression or classification) <br>
+    - training_data : Data to train the autoML model. <br>
+    - label_column_name : output label from data the model will yield. <br>
+    - iterations : The number of iterations the autoML should run. <br>
+    - primary_metric : the evaluation metric for the models for example we used accuracy<br>
+    - n_cross_validations :  Cross validations needed to perform in each model <br>
     - experiment_timeout_minutes : the time in minutes after which autoML will stop. <br>
 - Here is the list of all the models tested during AutoML run :
 
